@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.background-red {
+  
+  background: url(./assets/Section.png);
+
+  
+
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+
+  img{
+    text-transform: uppercase;
+    will-change: transform;
+    transform: translateX(0);
+    white-space: nowrap;
+    animation: marquee 24s linear infinite;
+    font-size: 200px;
+    font-family: 'Gravitas One', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    color: #98C9FF;
+    margin-right: 20px;
+  }
+}
+
+.bg-custom {
+  background: linear-gradient(281deg, #F32E0E 0%, #22A6F1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  FONT-WEIGHT: 900;
+  font-size: 18px;
+  width: max-content;
+  margin: auto;
+}

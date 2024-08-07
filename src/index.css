@@ -18,9 +18,17 @@ code {
 .background-red {
   
   background: url(./assets/Section.png);
+}
 
-  
+.about-background {
+  background: url(./assets/About\ Us.png)
+}
 
+.testimonial-background {
+  background: url(./assets/Testimonial\ Background.png)
+}
+.background-card {
+  background: url(./assets/Background\ \ Card.png)
 }
 
 @keyframes marquee {
@@ -61,5 +69,83 @@ code {
   FONT-WEIGHT: 900;
   font-size: 18px;
   width: max-content;
+  /* margin: auto; */
+}
+.Review-box {
+  position: relative;
+}
+
+.Image-box {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+}
+body, html{
+  overflow-x: hidden !important;
+}
+.testimonials-sec .slick-track {
+  display: flex;
+  gap: 30px;
+}
+
+.testimonials-sec {
+  padding: 0 50px;
+}
+
+.testimonials-sec .slick-list {
+  overflow-x: hidden;
+  padding: 50px 0px;
+}
+.testimonials-sec ul.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonials-sec ul.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background: #EAEAEA33;
+  border-radius: 100px;
+  color: transparent;
+  font-size: 0;
+}
+
+.testimonials-sec ul.slick-dots li {
+  width: max-content;
+  height: max-content;
+  display: flex;
+}
+
+.testimonials-sec ul.slick-dots li.slick-active button {
+  background: #22A6F1;
+}
+
+.Special-background {
+  background: #120202;
+}
+
+.Footer-Sec {
+  background: url(./assets/Footer\ →\ Section.png)
+}
+.Containers {
+  width: 1240px;
+}
+
+.cont {
+  max-width: 1240px;
   margin: auto;
+  width: 1240px;
+}
+
+.cont.boxx {
+  display: flex;
+  gap: 10px;
+}
+
+.cont.test {
+  max-width: max-content;
+  width: auto;
 }

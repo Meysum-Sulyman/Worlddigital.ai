@@ -27,7 +27,7 @@ const Navbar = () => {
           <button className="text-white">
             <img src={user}></img>
             </button>
-          <button className="bg-gradient-to-r from-purple-500 to-red-500 text-white px-4 py-2 rounded-full">Sign In</button>
+          <button className="bg-gradient-to-r from-purple-500 to-red-500 text-white px-12 py-2 rounded-full">Sign In</button>
         </div>
       </div>
     </nav>

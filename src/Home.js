@@ -126,10 +126,10 @@ const HomePage = () => {
         </div>
       </div>
       <div className="marquee mt-8 mb-8">
-        <img src={Simple}></img>
-        <img src={Simple}></img>
-        <img src={Simple}></img>
-        <img src={Simple}></img>
+        <img src={Simple} alt="marquee"></img>
+        <img src={Simple} alt="marquee"></img>
+        <img src={Simple} alt="marquee"></img>
+        <img src={Simple} alt="marquee"></img>
       </div>
 
       {/* // Our Services // */}
@@ -242,17 +242,17 @@ const HomePage = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-4xl">
                 <div className="bg-red-600 p-6 rounded-lg align-middle">
-                  <img src={Waterdroplet}></img>
+                  <img src={Waterdroplet} alt="waterdroplet"></img>
                   <h3 className="text-2xl font-bold">100%</h3>
                   <p>Website Accuracy</p>
                 </div>
                 <div className="bg-red-600 p-6 rounded-lg align-middle">
-                  <img src={Waterdroplet}></img>
+                  <img src={Waterdroplet} alt="waterdroplet"></img>
                   <h3 className="text-2xl font-bold">20+</h3>
                   <p>Members</p>
                 </div>
                 <div className="bg-red-600 p-6 rounded-lg align-middle">
-                  <img src={Waterdroplet}></img>
+                  <img src={Waterdroplet} alt="waterdroplet"></img>
                   <h3 className="text-2xl font-bold">Over 240%</h3>
                   <p>Projected user base growth</p>
                 </div>
@@ -292,7 +292,7 @@ const HomePage = () => {
       <div className="p-10">
         <div className="cont">
           <div className="flex align-middle justify-center">
-            <img src={Howitworks}></img>
+            <img src={Howitworks} alt="Howitworks"></img>
           </div>
         </div>
       </div>
@@ -317,12 +317,12 @@ const HomePage = () => {
             <Slider />
           </div>
           <div className="flex justify-center mt-14 gap-48">
-            <img src={crown} />
-            <img src={ring} />
-            <img src={digg} />
-            <img src={fish} />
-            <img src={round} />
-            <img src={A} />
+            <img src={crown} alt="logos" />
+            <img src={ring} alt="logos"/>
+            <img src={digg} alt="logos"/>
+            <img src={fish} alt="logos"/>
+            <img src={round} alt="logos"/>
+            <img src={A} alt="logos"/>
           </div>
         </div>
       </div>

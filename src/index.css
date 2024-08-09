@@ -31,6 +31,31 @@ code {
   background: url(./assets/Background\ \ Card.png)
 }
 
+.Our-Story-background {
+  background: url(./assets/Our\ Story\ Background.png)
+
+}
+.ytp-cued-thumbnail-overlay {
+  position: relative;
+}
+
+.ytp-cued-thumbnail-overlay:before {
+  content: '';
+  position: absolute;
+  background: url(./assets/HowItWOrks.png);
+  height: 100%;
+  z-index: 1;
+  background-size: cover !IMPORTANT;
+}
+.yt-video .relative.w-full.h-64 {
+  height: 475px;
+}
+
+.yt-video .relative.w-full.h-64 img, .yt-video .relative.w-full.h-64 iframe {
+  border-radius: 40px;
+}
+
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -148,4 +173,29 @@ body, html{
 .cont.test {
   max-width: max-content;
   width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .cont {
+    width: auto;
+  }
+
+  .cont.boxx {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .cont {
+    width: auto;
+  }
+
+  .cont.boxx {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import container from "./assets/Container.png";
-import suitcase from "./assets/SuitCase.png";
-import scale from "./assets/Scale.png";
+import container from "./assets/Icon.png";
+import suitcase from "./assets/SUITCASE (2).png";
+import scale from "./assets/SCALE@.png";
 import Simple from "./assets/Simple. Fast. Efficient. Precise. Intelligent.Simple. Fast..png";
 import Hand from "./assets/Hand.png";
 import Snowflake from "./assets/Snowflake.png";
@@ -19,112 +19,102 @@ import round from "./assets/6Artboard-1-800x800.png.png";
 import A from "./assets/1Artboard-1.png.png";
 import { FaArrowRight } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
-import logo from "./assets/logoAI.png";
+import Footer from "./comonents/footer";
+import { useNavigate } from "react-router-dom";
+import VideoPlayer from "./comonents/video"; // Adjust path as needed
+import thumbnailImage from "./assets/HowItWOrks.png"; // Update with your image path
 
 const HomePage = () => {
+  const navigate = useNavigate();
+  const handleRedirect = () => {
+    navigate("/about-us");
+  };
+
   return (
     <div className="Special-background">
-      <div className="background-red text-white py-20">
-        <div className="cont">
-          <div className="container mx-auto flex">
-            <div className="w-2/4 ">
-              <p className="bg-custom pb-3">ChatBot AI</p>
-              <h1 className="text-5xl font-bold pb-3">
-                Generate Sales with the Complete Marketing AI
-              </h1>
-              <p className="mt-4 text-lg">
-                Instant, affordable, and completely automated marketing for your
-                business on Meta and Google.
-              </p>
-              <button className="mt-6 text-white border-b-4 py-3 ">
-                Subscribe Now
+      <div className="background-red text-white py-20 px-10">
+  <div className="cont">
+    <div className="container xl:mx-auto lg:mx-auto md:mx-4 sm:ml-2 align-middle flex">
+      <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col">
+        <div className="xl:w-3/4 lg:w-3/4 md:w-full sm:w-full mb-8 md:mb-4 sm:mb-2 ">
+          <p className="bg-custom pb-3">ChatBot AI</p>
+          <h1 className="text-5xl font-bold pb-3 md:text-4xl sm:text-3xl">
+            Generate Sales with the Complete Marketing AI
+          </h1>
+          <p className="mt-4 text-lg md:text-base sm:text-sm">
+            Instant, affordable, and completely automated marketing for your business on Meta and Google.
+          </p>
+          <button className="mt-6 text-white border-b-4 py-3 md:text-base sm:text-sm">
+            Subscribe Now
+          </button>
+        </div>
+        <div className="xl:w-2/4 lg:w-2/4 md:w-full sm:w-full mb-8 md:mb-4 sm:mb-2">
+          <div className="bg-gradient-to-br from-gray-800 to-red-500 rounded-lg shadow-lg p-4 ">
+            <div className="bg-gray-700 rounded-t-lg p-2 flex items-center justify-between">
+              <span className="text-blue-300 font-semibold">Chat with AI Bot</span>
+              <button className="text-gray-400">
+                <i className="fas fa-chevron-up"></i>
               </button>
             </div>
-            <div className="w-1/4">
-              <div className="bg-gradient-to-br from-gray-800 to-red-500 rounded-lg shadow-lg p-4 max-w-sm mx-auto">
-                <div className="bg-gray-700 rounded-t-lg p-2 flex items-center justify-between">
-                  <span className="text-blue-300 font-semibold">
-                    Chat with AI Bot
-                  </span>
-                  <button className="text-gray-400">
-                    <i className="fas fa-chevron-up"></i>
+            <div className="bg-gray-800 p-4 rounded-b-lg space-y-4">
+              <div className="bg-gray-700 p-2 rounded text-white">Hey there! I'm AI Bot.</div>
+              <div className="bg-gray-700 p-2 rounded text-white">How does this work?</div>
+              <div className="bg-gray-700 p-2 rounded text-white">
+                It’s simple! What part of the process would you like to know?
+                <div className="flex justify-between mt-2">
+                  <button className="text-green-500">
+                    <i className="fas fa-thumbs-up"></i>
+                  </button>
+                  <button className="text-red-500">
+                    <i className="fas fa-thumbs-down"></i>
+                  </button>
+                  <button className="text-gray-500">
+                    <i className="fas fa-copy"></i>
                   </button>
                 </div>
-                <div className="bg-gray-800 p-4 rounded-b-lg space-y-4">
-                  <div className="bg-gray-700 p-2 rounded text-white">
-                    Hey there! I'm AI Bot.
-                  </div>
-                  <div className="bg-gray-700 p-2 rounded text-white">
-                    How does this work?
-                  </div>
-                  <div className="bg-gray-700 p-2 rounded text-white">
-                    It’s simple! What part of the process would you like to
-                    know?
-                    <div className="flex justify-between mt-2">
-                      <button className="text-green-500">
-                        <i className="fas fa-thumbs-up"></i>
-                      </button>
-                      <button className="text-red-500">
-                        <i className="fas fa-thumbs-down"></i>
-                      </button>
-                      <button className="text-gray-500">
-                        <i className="fas fa-copy"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div className="relative">
-                    <input
-                      type="text"
-                      placeholder="Ask me anything..."
-                      className="w-full p-2 rounded bg-gray-700 text-white"
-                    />
-                    <button className="absolute right-2 top-2 text-blue-500">
-                      <i className="fas fa-paper-plane"></i>
-                    </button>
-                  </div>
-                </div>
-                <div className="bg-gray-900 p-4 rounded-lg mt-4 text-white">
-                  <h2 className="text-lg font-semibold">Lorem Ipsum</h2>
-                  <p className="text-gray-400">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <button className="text-blue-500 mt-2">View Details</button>
-                </div>
+              </div>
+              <div className="relative">
+                <input type="text" placeholder="Ask me anything..." className="w-full p-2 rounded bg-gray-700 text-white" />
+                <button className="absolute right-2 top-2 text-blue-500">
+                  <i className="fas fa-paper-plane"></i>
+                </button>
               </div>
             </div>
-            <div className="flex flex-col p-8 space-y-4">
-              <div className="mb-6">
-                <img src={container} alt="Container Icon" className="" />
-                <div>
-                  <h3 className="text-lg font-semibold">Top Of Mind ChatBot</h3>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
-              <div className="mb-6">
-                <img src={scale} alt="Scale Icon" className="" />
-                <div>
-                  <h3 className="text-lg font-semibold">Trained Team</h3>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
-              <div className="mb-6">
-                <img src={suitcase} alt="Suitcase Icon" className="" />
-                <div>
-                  <h3 className="text-lg font-semibold">Trusted Clients</h3>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
+            <div className="bg-gray-900 p-4 rounded-lg mt-4 text-white">
+              <h2 className="text-lg font-semibold">Lorem Ipsum</h2>
+              <p className="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button className="text-blue-500 mt-2">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div className="xl:w-2/4 xl:flex-col lg:w-2/4 lg:flex-col md:w-full flex flex-col p-8  md:flex-row">
+          <div className="mb-6">
+            <img src={container} alt="Container Icon" className="w-12 h-12" />
+            <div>
+              <h3 className="text-lg font-semibold">Top Of Mind ChatBot</h3>
+              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div className="mb-6">
+            <img src={scale} alt="Scale Icon" className="w-12 h-12" />
+            <div>
+              <h3 className="text-lg font-semibold">Trained Team</h3>
+              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div className="mb-6">
+            <img src={suitcase} alt="Suitcase Icon" className="w-12 h-12" />
+            <div>
+              <h3 className="text-lg font-semibold">Trusted Clients</h3>
+              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
       <div className="marquee mt-8 mb-8">
         <img src={Simple} alt="marquee"></img>
         <img src={Simple} alt="marquee"></img>
@@ -150,7 +140,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap gap-5 p-2 mr-12 ml-12">
+      <div className="flex flex-wrap gap-5 p-2 mr-12 ml-12 md:flex-col sm:flex-col ">
         <div className="cont boxx">
           <div className="flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 min-w-[200px]">
             <img className="w-14 h-14" src={Hand} alt="Hand Icon" />
@@ -162,49 +152,39 @@ const HomePage = () => {
           </div>
 
           <div className="flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 min-w-[200px]">
-            
-              <div className="img-content">
-                <img
-                  className="w-14 h-14"
-                  src={Snowflake}
-                  alt="Snowflake Icon"
-                />
-                <h3 className="text-2xl font-bold pb-3">
-                  Automated Visual Designs
-                </h3>
-                <p className="text-lg">
-                  Stunning visuals that reflect your brand.
-                </p>
-              </div>
-            
+            <div className="img-content">
+              <img className="w-14 h-14" src={Snowflake} alt="Snowflake Icon" />
+              <h3 className="text-2xl font-bold pb-3">
+                Automated Visual Designs
+              </h3>
+              <p className="text-lg">
+                Stunning visuals that reflect your brand.
+              </p>
+            </div>
           </div>
           <div className="flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 min-w-[200px]">
-            
-              <div className="contents">
-                <img className="w-14 h-14" src={Prism} alt="Prism Icon" />
-                <h3 className="text-2xl font-bold pb-3">
-                  Automated Ad Campaigns
-                </h3>
-                <p className="text-lg">
-                  Data-driven advertisements that target the right audience to
-                  promote your business.
-                </p>
-              </div>
-            
+            <div className="contents">
+              <img className="w-14 h-14" src={Prism} alt="Prism Icon" />
+              <h3 className="text-2xl font-bold pb-3">
+                Automated Ad Campaigns
+              </h3>
+              <p className="text-lg">
+                Data-driven advertisements that target the right audience to
+                promote your business.
+              </p>
+            </div>
           </div>
           <div className="flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 min-w-[200px]">
-            
-              <div className="new-content">
-                <img className="w-14 h-14" src={Stack} alt="Stack Icon" />
-                <h3 className="text-2xl font-bold pb-3">
-                  Automated Content Generation
-                </h3>
-                <p className="text-lg">
-                  Initiate proactive conversations with customers based on their
-                  profiles.
-                </p>
-              </div>
-            
+            <div className="new-content">
+              <img className="w-14 h-14" src={Stack} alt="Stack Icon" />
+              <h3 className="text-2xl font-bold pb-3">
+                Automated Content Generation
+              </h3>
+              <p className="text-lg">
+                Initiate proactive conversations with customers based on their
+                profiles.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -281,7 +261,10 @@ const HomePage = () => {
                 optimizing ad campaigns and targeting the right audience to
                 boost your business.
               </p>
-              <button className="mt-6 bg-gradient-to-r from-purple-500 to-red-500 text-white font-bold py-2 px-10 rounded-full">
+              <button
+                onClick={handleRedirect}
+                className="mt-6 bg-gradient-to-r from-purple-500 to-red-500 text-white font-bold py-2 px-10 rounded-full"
+              >
                 Learn More
               </button>
             </div>
@@ -289,13 +272,24 @@ const HomePage = () => {
         </div>
       </div>
       {/* // How It Works */}
-      <div className="p-10">
+      {/* <div className="p-10">
         <div className="cont">
           <div className="flex align-middle justify-center">
             <img src={Howitworks} alt="Howitworks"></img>
           </div>
         </div>
+      </div> */}
+      <div className="p-10">
+        <div className="cont relative">
+          <div className="flex align-middle justify-center relative yt-video">
+            <VideoPlayer
+              videoId="vNntv2O4QK8?si=lYEQqPHJ4MW7UWT1" // YouTube video ID
+              thumbnailSrc={thumbnailImage} // Path to your thumbnail image
+            />
+          </div>
+        </div>
       </div>
+
       {/* //Testimonial */}
       <div className="testimonial-background p-20">
         <div className="cont test">
@@ -318,11 +312,11 @@ const HomePage = () => {
           </div>
           <div className="flex justify-center mt-14 gap-48">
             <img src={crown} alt="logos" />
-            <img src={ring} alt="logos"/>
-            <img src={digg} alt="logos"/>
-            <img src={fish} alt="logos"/>
-            <img src={round} alt="logos"/>
-            <img src={A} alt="logos"/>
+            <img src={ring} alt="logos" />
+            <img src={digg} alt="logos" />
+            <img src={fish} alt="logos" />
+            <img src={round} alt="logos" />
+            <img src={A} alt="logos" />
           </div>
         </div>
       </div>
@@ -569,136 +563,7 @@ const HomePage = () => {
 
       {/* // Our Newsletter // */}
 
-      <div className="Footer-Sec">
-        <div className="cont">
-          <div className="flex justify-center items-center pt-20">
-            <div className="flex flex-col text-white py-5 text-center">
-              <div className="flex align-middle justify-center">
-                <p className="bg-custom pb-3 text-center">Our Newsletter</p>
-              </div>
-              <h3 className="text-5xl font-bold pb-3">
-                Subscribe And Ask For Free
-              </h3>
-              <p className="mt-4 text-lg ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation.
-              </p>
-            </div>
-          </div>
-          {/* <div className="flex items-center border-b border-white">
-        <input
-          className="w-full bg-transparent focus:outline-none py-2 px-12 rounded-full"
-          type="Email"
-        />
-       </div> */}
-          <div className="flex justify-center items-center pb-28">
-            <input
-              className="bg-transparent border-b border-red-800 py-2 px-40 focus:outline-none mr-4 border-2 rounded-full"
-              type="email"
-              placeholder="Your Email"
-            />
-            <button className="bg-gradient-to-r from-red-600 to-blue-600 text-white font-bold py-2 px-8 rounded-full">
-              Subscribe
-            </button>
-          </div>
-          <footer className=" text-white pb-16">
-            <div className="w-4/5 mx-auto ">
-              {/* Newsletter Section */}
-              {/* <div className="text-center mb-12">
-          <p className="text-red-500 mb-2">Our Newsletter</p>
-          <h2 className="text-3xl font-bold mb-4">Subscribe And Ask For Free</h2>
-          <p className="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-          <div className="flex justify-center items-center">
-            <input className="bg-transparent border-b border-white py-2 px-4 focus:outline-none mr-4" type="email" placeholder="Your Email" />
-            <button className="bg-gradient-to-r from-red-600 to-blue-600 text-white font-bold py-2 px-8 rounded-full">Subscribe</button>
-          </div>
-        </div> */}
-
-              {/* Main Footer Section */}
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-24 mb-12">
-                <div className="">
-                  <img
-                    src={logo}
-                    alt="World Digital AI Logo"
-                    className="mb-4"
-                  />
-                  <p>
-                    Temporibus autem quibusdam et aut officiis debitis aut rerum
-                    necessitatibus saepe eveniet ut et voluptates repudiandae
-                    sint et molestiae non recusandae.
-                  </p>
-                  <div className="flex space-x-4 mt-4">
-                    <FaFacebookF className="hover:text-red-500 cursor-pointer" />
-                    <FaTwitter className="hover:text-red-500 cursor-pointer" />
-                    <FaInstagram className="hover:text-red-500 cursor-pointer" />
-                    <FaYoutube className="hover:text-red-500 cursor-pointer" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold mb-4">Useful Links</h3>
-                  <ul className="space-y-2">
-                    <li className="hover:text-red-500 cursor-pointer">About</li>
-                    <li className="hover:text-red-500 cursor-pointer">
-                      Project
-                    </li>
-                    <li className="hover:text-red-500 cursor-pointer">
-                      News & Update
-                    </li>
-                    <li className="hover:text-red-500 cursor-pointer">
-                      Pricing
-                    </li>
-                    <li className="hover:text-red-500 cursor-pointer">
-                      Contact
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="font-bold mb-4">Support</h3>
-                  <ul className="space-y-2">
-                    <li className="hover:text-red-500 cursor-pointer">
-                      Privacy Policy
-                    </li>
-                    <li className="hover:text-red-500 cursor-pointer">
-                      Support
-                    </li>
-                    <li className="hover:text-red-500 cursor-pointer">
-                      Disclaimer
-                    </li>
-                    <li className="hover:text-red-500 cursor-pointer">FAQ</li>
-                    <li className="hover:text-red-500 cursor-pointer">
-                      Term & Condition
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="font-bold mb-4">Company</h3>
-                  <ul className="space-y-2">
-                    <li className="hover:text-red-500 cursor-pointer">
-                      Sitemap
-                    </li>
-                    <li className="hover:text-red-500 cursor-pointer">
-                      Work Hours
-                    </li>
-                    <li className="hover:text-red-500 cursor-pointer">
-                      Office
-                    </li>
-                    <li className="hover:text-red-500 cursor-pointer">
-                      Payment
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Bottom Footer Section */}
-              <div className="border-t border-red-950 pt-6 text-center flex justify-between">
-                <p>WorldDigital.ai</p>
-                <p>© Copyright © 2024. All rights reserved.</p>
-              </div>
-            </div>
-          </footer>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };

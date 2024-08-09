@@ -15,7 +15,6 @@ import Fingerprint from "./assets/Fingerprint.png";
 import Wallet2 from "./assets/Wallet2.png";
 import downloadIicon from "./assets/Download Icon.png";
 
-
 const AboutUs = () => {
   return (
     <div className="Special-background">
@@ -26,7 +25,7 @@ const AboutUs = () => {
             <div className="flex pt-4">
               <div>Home</div>
               <li className="flex items-center ">
-                <img src={arrow} className="px-5" />
+                <img src={arrow} alt="ok" className="px-5" />
               </li>
               <div>About</div>
             </div>
@@ -65,7 +64,7 @@ const AboutUs = () => {
               </p>
               <div className="flex justify-center align-middle pt-8">
                 <button className="bg-gradient-to-r from-red-500 to-blue-500 text-white rounded-full p-4 w-12">
-                  <img src={downloadIicon} />
+                  <img src={downloadIicon} alt="ok" />
                 </button>
               </div>{" "}
             </div>
@@ -92,118 +91,118 @@ const AboutUs = () => {
             <div className="flex gap-6 ">
               <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
                 <div className="img-content">
-                    <div className="flex gap-7">
-                  <img
-                    className="w-14 h-14"
-                    src={Symbol1}
-                    alt="Snowflake Icon"
-                  />
-                  <div className="flex flex-col">
-                  <h3 className="text-2xl font-bold pb-3">
-                    Automated Visual Designs
-                  </h3>
-                  <p className="text-lg">
-                    Stunning visuals that reflect your brand.
-                  </p>
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
-                <div className="img-content">
-                    <div className="flex gap-7">
-                  <img
-                    className="w-14 h-14"
-                    src={Snowflake}
-                    alt="Snowflake Icon"
-                  />
-                  <div className="flex flex-col">
-                  <h3 className="text-2xl font-bold pb-3">
-                    Automated Visual Designs
-                  </h3>
-                  <p className="text-lg">
-                    Stunning visuals that reflect your brand.
-                  </p>
-                  </div>
+                  <div className="flex gap-7">
+                    <img
+                      className="w-14 h-14"
+                      src={Symbol1}
+                      alt="Snowflake Icon"
+                    />
+                    <div className="flex flex-col">
+                      <h3 className="text-2xl font-bold pb-3">
+                        Automated Visual Designs
+                      </h3>
+                      <p className="text-lg">
+                        Stunning visuals that reflect your brand.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
                 <div className="img-content">
-                    <div className="flex gap-7">
-                  <img
-                    className="w-14 h-14"
-                    src={Badge}
-                    alt="Snowflake Icon"
-                  />
-                  <div className="flex flex-col">
-                  <h3 className="text-2xl font-bold pb-3">
-                    Automated Visual Designs
-                  </h3>
-                  <p className="text-lg">
-                    Stunning visuals that reflect your brand.
-                  </p>
+                  <div className="flex gap-7">
+                    <img
+                      className="w-14 h-14"
+                      src={Snowflake}
+                      alt="Snowflake Icon"
+                    />
+                    <div className="flex flex-col">
+                      <h3 className="text-2xl font-bold pb-3">
+                        Automated Visual Designs
+                      </h3>
+                      <p className="text-lg">
+                        Stunning visuals that reflect your brand.
+                      </p>
+                    </div>
                   </div>
+                </div>
+              </div>
+              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
+                <div className="img-content">
+                  <div className="flex gap-7">
+                    <img
+                      className="w-14 h-14"
+                      src={Badge}
+                      alt="Snowflake Icon"
+                    />
+                    <div className="flex flex-col">
+                      <h3 className="text-2xl font-bold pb-3">
+                        Automated Visual Designs
+                      </h3>
+                      <p className="text-lg">
+                        Stunning visuals that reflect your brand.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="flex gap-6 mt-6">
-            <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
+              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
                 <div className="img-content">
-                    <div className="flex gap-7">
-                  <img
-                    className="w-14 h-14"
-                    src={UserLock}
-                    alt="Snowflake Icon"
-                  />
-                  <div className="flex flex-col">
-                  <h3 className="text-2xl font-bold pb-3">
-                    Automated Visual Designs
-                  </h3>
-                  <p className="text-lg">
-                    Stunning visuals that reflect your brand.
-                  </p>
-                  </div>
+                  <div className="flex gap-7">
+                    <img
+                      className="w-14 h-14"
+                      src={UserLock}
+                      alt="Snowflake Icon"
+                    />
+                    <div className="flex flex-col">
+                      <h3 className="text-2xl font-bold pb-3">
+                        Automated Visual Designs
+                      </h3>
+                      <p className="text-lg">
+                        Stunning visuals that reflect your brand.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
                 <div className="img-content">
-                    <div className="flex gap-7">
-                  <img
-                    className="w-14 h-14"
-                    src={Wallet2}
-                    alt="Snowflake Icon"
-                  />
-                  <div className="flex flex-col">
-                  <h3 className="text-2xl font-bold pb-3">
-                    Automated Visual Designs
-                  </h3>
-                  <p className="text-lg">
-                    Stunning visuals that reflect your brand.
-                  </p>
-                  </div>
+                  <div className="flex gap-7">
+                    <img
+                      className="w-14 h-14"
+                      src={Wallet2}
+                      alt="Snowflake Icon"
+                    />
+                    <div className="flex flex-col">
+                      <h3 className="text-2xl font-bold pb-3">
+                        Automated Visual Designs
+                      </h3>
+                      <p className="text-lg">
+                        Stunning visuals that reflect your brand.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
                 <div className="img-content">
-                    <div className="flex gap-7">
-                  <img
-                    className="w-14 h-14"
-                    src={Fingerprint}
-                    alt="Snowflake Icon"
-                  />
-                  <div className="flex flex-col">
-                  <h3 className="text-2xl font-bold pb-3">
-                    Automated Visual Designs
-                  </h3>
-                  <p className="text-lg">
-                    Stunning visuals that reflect your brand.
-                  </p>
-                  </div>
+                  <div className="flex gap-7">
+                    <img
+                      className="w-14 h-14"
+                      src={Fingerprint}
+                      alt="Snowflake Icon"
+                    />
+                    <div className="flex flex-col">
+                      <h3 className="text-2xl font-bold pb-3">
+                        Automated Visual Designs
+                      </h3>
+                      <p className="text-lg">
+                        Stunning visuals that reflect your brand.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -217,7 +216,7 @@ const AboutUs = () => {
       <div className="">
         <div className="flex">
           <div className="flex">
-            <img src={AboutRobot} />
+            <img src={AboutRobot} alt="ok" />
           </div>
           <div class="flex flex-col text-white w-1/3 py-20 pl-24">
             <div class=" ">
@@ -280,7 +279,7 @@ const AboutUs = () => {
                 <div className="bg-gradient-to-r from-blue-950 to-black p-6 rounded-t-lg shadow-md">
                   <div className="flex items-center space-x-3">
                     <div className="bg-transparent p-2 rounded-full">
-                      <img className="w-12 h-12"src={dots}  />
+                      <img className="w-12 h-12" src={dots} alt="ok" />
                     </div>
                     <h3 className="text-2xl font-semibold text-white">
                       Make A Payment
@@ -299,7 +298,7 @@ const AboutUs = () => {
                 <div className="bg-gradient-to-r from-blue-950 to-black p-6 rounded-t-lg shadow-md">
                   <div className="flex items-center space-x-3">
                     <div className="bg-transparent p-2 rounded-full">
-                      <img className="w-12 h-12" src={wallet} />
+                      <img className="w-12 h-12" src={wallet} alt="ok" />
                     </div>
                     <h3 className="text-2xl font-semibold text-white">
                       Make A Payment
@@ -318,7 +317,7 @@ const AboutUs = () => {
                 <div className="bg-gradient-to-r from-blue-950 to-black p-6 rounded-t-lg shadow-md">
                   <div className="flex items-center space-x-3">
                     <div className="bg-transparent p-2 rounded-full">
-                      <img className="w-12 h-12" src={screen} />
+                      <img className="w-12 h-12" src={screen} alt="ok" />
                     </div>
                     <h3 className="text-2xl font-semibold text-white">
                       Make A Payment
@@ -362,8 +361,8 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="flex">
-            <img src={facebook} />
-            <img src={Google} />
+            <img src={facebook} alt="ok" />
+            <img src={Google} alt="ok" />
           </div>
         </div>
       </div>

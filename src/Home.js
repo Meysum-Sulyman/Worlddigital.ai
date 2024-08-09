@@ -9,7 +9,7 @@ import Prism from "./assets/Prism.png";
 import Stack from "./assets/Stack.png";
 import Robot from "./assets/Robot.png";
 import Waterdroplet from "./assets/Water Drops.png";
-import Howitworks from "./assets/HowItWOrks.png";
+// import Howitworks from "./assets/HowItWOrks.png";
 import Slider from "./comonents/carosel";
 import digg from "./assets/2Artboard-1.png.png";
 import fish from "./assets/3Artboard-1.png.png";
@@ -33,87 +33,117 @@ const HomePage = () => {
   return (
     <div className="Special-background">
       <div className="background-red text-white py-20 px-10">
-  <div className="cont">
-    <div className="container xl:mx-auto lg:mx-auto md:mx-4 sm:ml-2 align-middle flex">
-      <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col">
-        <div className="xl:w-3/4 lg:w-3/4 md:w-full sm:w-full mb-8 md:mb-4 sm:mb-2 ">
-          <p className="bg-custom pb-3">ChatBot AI</p>
-          <h1 className="text-5xl font-bold pb-3 md:text-4xl sm:text-3xl">
-            Generate Sales with the Complete Marketing AI
-          </h1>
-          <p className="mt-4 text-lg md:text-base sm:text-sm">
-            Instant, affordable, and completely automated marketing for your business on Meta and Google.
-          </p>
-          <button className="mt-6 text-white border-b-4 py-3 md:text-base sm:text-sm">
-            Subscribe Now
-          </button>
-        </div>
-        <div className="xl:w-2/4 lg:w-2/4 md:w-full sm:w-full mb-8 md:mb-4 sm:mb-2">
-          <div className="bg-gradient-to-br from-gray-800 to-red-500 rounded-lg shadow-lg p-4 ">
-            <div className="bg-gray-700 rounded-t-lg p-2 flex items-center justify-between">
-              <span className="text-blue-300 font-semibold">Chat with AI Bot</span>
-              <button className="text-gray-400">
-                <i className="fas fa-chevron-up"></i>
-              </button>
-            </div>
-            <div className="bg-gray-800 p-4 rounded-b-lg space-y-4">
-              <div className="bg-gray-700 p-2 rounded text-white">Hey there! I'm AI Bot.</div>
-              <div className="bg-gray-700 p-2 rounded text-white">How does this work?</div>
-              <div className="bg-gray-700 p-2 rounded text-white">
-                It’s simple! What part of the process would you like to know?
-                <div className="flex justify-between mt-2">
-                  <button className="text-green-500">
-                    <i className="fas fa-thumbs-up"></i>
-                  </button>
-                  <button className="text-red-500">
-                    <i className="fas fa-thumbs-down"></i>
-                  </button>
-                  <button className="text-gray-500">
-                    <i className="fas fa-copy"></i>
-                  </button>
-                </div>
-              </div>
-              <div className="relative">
-                <input type="text" placeholder="Ask me anything..." className="w-full p-2 rounded bg-gray-700 text-white" />
-                <button className="absolute right-2 top-2 text-blue-500">
-                  <i className="fas fa-paper-plane"></i>
+        <div className="cont">
+          <div className="container xl:mx-auto lg:mx-auto md:mx-4 sm:ml-2 align-middle flex">
+            <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col">
+              <div className="xl:w-3/4 lg:w-3/4 md:w-full sm:w-full mb-8 md:mb-4 sm:mb-2 ">
+                <p className="bg-custom pb-3">ChatBot AI</p>
+                <h1 className="text-5xl font-bold pb-3 md:text-4xl sm:text-3xl">
+                  Generate Sales with the Complete Marketing AI
+                </h1>
+                <p className="mt-4 text-lg md:text-base sm:text-sm">
+                  Instant, affordable, and completely automated marketing for
+                  your business on Meta and Google.
+                </p>
+                <button className="mt-6 text-white border-b-4 py-3 md:text-base sm:text-sm">
+                  Subscribe Now
                 </button>
               </div>
-            </div>
-            <div className="bg-gray-900 p-4 rounded-lg mt-4 text-white">
-              <h2 className="text-lg font-semibold">Lorem Ipsum</h2>
-              <p className="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <button className="text-blue-500 mt-2">View Details</button>
-            </div>
-          </div>
-        </div>
-        <div className="xl:w-2/4 xl:flex-col lg:w-2/4 lg:flex-col md:w-full flex flex-col p-8  md:flex-row">
-          <div className="mb-6">
-            <img src={container} alt="Container Icon" className="w-12 h-12" />
-            <div>
-              <h3 className="text-lg font-semibold">Top Of Mind ChatBot</h3>
-              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div className="mb-6">
-            <img src={scale} alt="Scale Icon" className="w-12 h-12" />
-            <div>
-              <h3 className="text-lg font-semibold">Trained Team</h3>
-              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div className="mb-6">
-            <img src={suitcase} alt="Suitcase Icon" className="w-12 h-12" />
-            <div>
-              <h3 className="text-lg font-semibold">Trusted Clients</h3>
-              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div className="xl:w-2/4 lg:w-2/4 md:w-full sm:w-full mb-8 md:mb-4 sm:mb-2">
+                <div className="bg-gradient-to-br from-gray-800 to-red-500 rounded-lg shadow-lg p-4 ">
+                  <div className="bg-gray-700 rounded-t-lg p-2 flex items-center justify-between">
+                    <span className="text-blue-300 font-semibold">
+                      Chat with AI Bot
+                    </span>
+                    <button className="text-gray-400">
+                      <i className="fas fa-chevron-up"></i>
+                    </button>
+                  </div>
+                  <div className="bg-gray-800 p-4 rounded-b-lg space-y-4">
+                    <div className="bg-gray-700 p-2 rounded text-white">
+                      Hey there! I'm AI Bot.
+                    </div>
+                    <div className="bg-gray-700 p-2 rounded text-white">
+                      How does this work?
+                    </div>
+                    <div className="bg-gray-700 p-2 rounded text-white">
+                      It’s simple! What part of the process would you like to
+                      know?
+                      <div className="flex justify-between mt-2">
+                        <button className="text-green-500">
+                          <i className="fas fa-thumbs-up"></i>
+                        </button>
+                        <button className="text-red-500">
+                          <i className="fas fa-thumbs-down"></i>
+                        </button>
+                        <button className="text-gray-500">
+                          <i className="fas fa-copy"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <input
+                        type="text"
+                        placeholder="Ask me anything..."
+                        className="w-full p-2 rounded bg-gray-700 text-white"
+                      />
+                      <button className="absolute right-2 top-2 text-blue-500">
+                        <i className="fas fa-paper-plane"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div className="bg-gray-900 p-4 rounded-lg mt-4 text-white">
+                    <h2 className="text-lg font-semibold">Lorem Ipsum</h2>
+                    <p className="text-gray-400">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <button className="text-blue-500 mt-2">View Details</button>
+                  </div>
+                </div>
+              </div>
+              <div className="xl:w-2/4 xl:flex-col lg:w-2/4 lg:flex-col md:w-full flex flex-col p-8  md:flex-row">
+                <div className="mb-6">
+                  <img
+                    src={container}
+                    alt="Container Icon"
+                    className="w-12 h-12"
+                  />
+                  <div>
+                    <h3 className="text-lg font-semibold">
+                      Top Of Mind ChatBot
+                    </h3>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div className="mb-6">
+                  <img src={scale} alt="Scale Icon" className="w-12 h-12" />
+                  <div>
+                    <h3 className="text-lg font-semibold">Trained Team</h3>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div className="mb-6">
+                  <img
+                    src={suitcase}
+                    alt="Suitcase Icon"
+                    className="w-12 h-12"
+                  />
+                  <div>
+                    <h3 className="text-lg font-semibold">Trusted Clients</h3>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
 
       <div className="marquee mt-8 mb-8">
         <img src={Simple} alt="marquee"></img>

@@ -5,8 +5,6 @@ import Snowflake from "./assets/Snowflake.png";
 import Prism from "./assets/Prism.png";
 import Stack from "./assets/Stack.png";
 
-
-
 const AboutUs = () => {
   return (
     <div className="Special-background">
@@ -17,14 +15,12 @@ const AboutUs = () => {
             <div className="flex pt-4">
               <div>Home</div>
               <li className="flex items-center ">
-                <img src={arrow} className="px-5" />
+                <img src={arrow} alt="ok" className="px-5" />
               </li>
               <div>Service</div>
             </div>
           </div>
         </div>
-
-        
       </div>
 
       {/* // Our Services // */}
@@ -57,49 +53,39 @@ const AboutUs = () => {
           </div>
 
           <div className="flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 min-w-[200px]">
-            
-              <div className="img-content">
-                <img
-                  className="w-14 h-14"
-                  src={Snowflake}
-                  alt="Snowflake Icon"
-                />
-                <h3 className="text-2xl font-bold pb-3">
-                  Automated Visual Designs
-                </h3>
-                <p className="text-lg">
-                  Stunning visuals that reflect your brand.
-                </p>
-              </div>
-            
+            <div className="img-content">
+              <img className="w-14 h-14" src={Snowflake} alt="Snowflake Icon" />
+              <h3 className="text-2xl font-bold pb-3">
+                Automated Visual Designs
+              </h3>
+              <p className="text-lg">
+                Stunning visuals that reflect your brand.
+              </p>
+            </div>
           </div>
           <div className="flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 min-w-[200px]">
-            
-              <div className="contents">
-                <img className="w-14 h-14" src={Prism} alt="Prism Icon" />
-                <h3 className="text-2xl font-bold pb-3">
-                  Automated Ad Campaigns
-                </h3>
-                <p className="text-lg">
-                  Data-driven advertisements that target the right audience to
-                  promote your business.
-                </p>
-              </div>
-            
+            <div className="contents">
+              <img className="w-14 h-14" src={Prism} alt="Prism Icon" />
+              <h3 className="text-2xl font-bold pb-3">
+                Automated Ad Campaigns
+              </h3>
+              <p className="text-lg">
+                Data-driven advertisements that target the right audience to
+                promote your business.
+              </p>
+            </div>
           </div>
           <div className="flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 min-w-[200px]">
-            
-              <div className="new-content">
-                <img className="w-14 h-14" src={Stack} alt="Stack Icon" />
-                <h3 className="text-2xl font-bold pb-3">
-                  Automated Content Generation
-                </h3>
-                <p className="text-lg">
-                  Initiate proactive conversations with customers based on their
-                  profiles.
-                </p>
-              </div>
-            
+            <div className="new-content">
+              <img className="w-14 h-14" src={Stack} alt="Stack Icon" />
+              <h3 className="text-2xl font-bold pb-3">
+                Automated Content Generation
+              </h3>
+              <p className="text-lg">
+                Initiate proactive conversations with customers based on their
+                profiles.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -110,9 +96,7 @@ const AboutUs = () => {
           <strong>(+62) 234-567-890</strong>
         </p>
       </div>
-      
 
-    
       <Footer />
     </div>
   );

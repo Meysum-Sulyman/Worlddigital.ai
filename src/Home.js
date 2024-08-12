@@ -9,7 +9,6 @@ import Prism from "./assets/Prism.png";
 import Stack from "./assets/Stack.png";
 import Robot from "./assets/Robot.png";
 import Waterdroplet from "./assets/Water Drops.png";
-// import Howitworks from "./assets/HowItWOrks.png";
 import Slider from "./comonents/carosel";
 import digg from "./assets/2Artboard-1.png.png";
 import fish from "./assets/3Artboard-1.png.png";
@@ -21,8 +20,8 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
 import Footer from "./comonents/footer";
 import { useNavigate } from "react-router-dom";
-import VideoPlayer from "./comonents/video"; // Adjust path as needed
-import thumbnailImage from "./assets/HowItWOrks.png"; // Update with your image path
+import VideoPlayer from "./comonents/video";
+import thumbnailImage from "./assets/HowItWOrks.png";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -228,53 +227,69 @@ const HomePage = () => {
 
       {/* // About Us // */}
 
-      <div className="about-background p-10 ">
+      <div className="about-background p-6 sm:p-10">
         <div className="cont">
-          <div className=" text-white flex justify-center items-center w-full">
-            <div className="flex flex-col w-2/4">
-              <div className="shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row mb-8">
-                <div className=" flex">
-                  <div className="relative">
-                    <img src={Robot} alt="Robot" className="h-80 w-72" />
+          <div className="text-white flex flex-col sm:flex-row justify-center items-center w-full">
+            <div className="flex flex-col w-full sm:w-2/4">
+              <div className="shadow-lg rounded-lg overflow-hidden flex flex-col lg:flex-row md:flex-col mb-8">
+                <div className="flex md:justify-start">
+                  <div className="">
+                    <img src={Robot} alt="Robot" className="w-80" />
                   </div>
                 </div>
-                <div className="flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 bg-gradient-to-r from-red-600 via-red-500 to-blue-600">
-                  <h3 className="text-2xl font-bold pb-3">Our AI Chat Bot</h3>
-                  <p className="text-lg">
+                <div className="flex flex-col text-white p-6 sm:p-8 border-red-600 border-2 rounded-lg flex-1 bg-gradient-to-r from-red-600 via-red-500 to-blue-600">
+                  <h3 className="text-xl sm:text-2xl font-bold pb-3">
+                    Our AI Chat Bot
+                  </h3>
+                  <p className="text-base sm:text-lg">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                     elit tellus, luctus nec ullamcorper mattis.
                   </p>
-                  <button className="mt-6 text-white border-b-4 py-3 ">
+                  <button className="mt-4 sm:mt-6 text-white border-b-4 py-2 sm:py-3">
                     View Details
                   </button>
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-4xl">
-                <div className="bg-red-600 p-6 rounded-lg align-middle">
-                  <img src={Waterdroplet} alt="waterdroplet"></img>
-                  <h3 className="text-2xl font-bold">100%</h3>
-                  <p>Website Accuracy</p>
+              <div className="grid grid-cols-1 gap-4 w-full max-w-4xl sm:grid-cols-3">
+                <div className="bg-red-600 p-4 sm:p-6 rounded-lg text-center">
+                  <img
+                    src={Waterdroplet}
+                    alt="waterdroplet"
+                    className="mx-auto mb-2 sm:mb-4"
+                  />
+                  <h3 className="text-xl sm:text-2xl font-bold">100%</h3>
+                  <p className="text-sm sm:text-base">Website Accuracy</p>
                 </div>
-                <div className="bg-red-600 p-6 rounded-lg align-middle">
-                  <img src={Waterdroplet} alt="waterdroplet"></img>
-                  <h3 className="text-2xl font-bold">20+</h3>
-                  <p>Members</p>
+                <div className="bg-red-600 p-4 sm:p-6 rounded-lg text-center">
+                  <img
+                    src={Waterdroplet}
+                    alt="waterdroplet"
+                    className="mx-auto mb-2 sm:mb-4"
+                  />
+                  <h3 className="text-xl sm:text-2xl font-bold">20+</h3>
+                  <p className="text-sm sm:text-base">Members</p>
                 </div>
-                <div className="bg-red-600 p-6 rounded-lg align-middle">
-                  <img src={Waterdroplet} alt="waterdroplet"></img>
-                  <h3 className="text-2xl font-bold">Over 240%</h3>
-                  <p>Projected user base growth</p>
+                <div className="bg-red-600 p-4 sm:p-6 rounded-lg text-center">
+                  <img
+                    src={Waterdroplet}
+                    alt="waterdroplet"
+                    className="mx-auto mb-2 sm:mb-4"
+                  />
+                  <h3 className="text-xl sm:text-2xl font-bold">Over 240%</h3>
+                  <p className="text-sm sm:text-base">
+                    Projected user base growth
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="text-white mt-8 pl-24 w-2/4 ">
-              <h2 className="bg-custom text-xl">About Us</h2>
-              <h1 className="text-4xl font-bold text-red-500">
-                worlddigital.ai{" "}
+            <div className="text-white mt-8 sm:mt-0 sm:pl-10 w-full sm:w-2/4">
+              <h2 className="bg-custom text-lg sm:text-xl">About Us</h2>
+              <h1 className="text-3xl sm:text-4xl font-bold text-red-500">
+                worlddigital.ai
               </h1>
-              <h1 className="text-4xl font-bold">
+              <h1 className="text-3xl sm:text-4xl font-bold">
                 promotes your business on Meta and Google.
               </h1>
               <blockquote className="italic mt-4">
@@ -283,7 +298,7 @@ const HomePage = () => {
                 of marketing with Worlddigital.ai—where innovation meets
                 simplicity."
               </blockquote>
-              <p className="mt-4">
+              <p className="mt-4 text-sm sm:text-base">
                 World Digital.ai offers fully automated solutions for digital
                 marketing and design, tailored for Google and Meta platforms for
                 Small & Medium Enterprises. Our advanced AI technology handles
@@ -293,7 +308,7 @@ const HomePage = () => {
               </p>
               <button
                 onClick={handleRedirect}
-                className="mt-6 bg-gradient-to-r from-purple-500 to-red-500 text-white font-bold py-2 px-10 rounded-full"
+                className="mt-6 bg-gradient-to-r from-purple-500 to-red-500 text-white font-bold py-2 px-8 sm:px-10 rounded-full"
               >
                 Learn More
               </button>
@@ -301,6 +316,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
       {/* // How It Works */}
       {/* <div className="p-10">
         <div className="cont">
@@ -321,15 +337,17 @@ const HomePage = () => {
       </div>
 
       {/* //Testimonial */}
-      <div className="testimonial-background p-20">
+      <div className="testimonial-background xl:p-20 lg:p-20 md:p-20 sm:p-10">
         <div className="cont test">
           <div className="flex justify-center items-center">
-            <div className="flex flex-col text-white py-20 text-center">
+            <div className="flex flex-col text-white py-10 px-4 sm:py-20 text-center">
               <div className="flex align-middle justify-center">
                 <p className="bg-custom pb-3 text-center">Testimonial</p>
               </div>
-              <h3 className="text-5xl font-bold pb-3">What My Clients Say</h3>
-              <p className="mt-4 text-lg ">
+              <h3 className="text-4xl sm:text-5xl font-bold pb-3">
+                What My Clients Say
+              </h3>
+              <p className="mt-2 sm:mt-4 text-base sm:text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation.
@@ -340,13 +358,14 @@ const HomePage = () => {
           <div className="testimonials-sec">
             <Slider />
           </div>
-          <div className="flex justify-center mt-14 gap-48">
-            <img src={crown} alt="logos" />
-            <img src={ring} alt="logos" />
-            <img src={digg} alt="logos" />
-            <img src={fish} alt="logos" />
-            <img src={round} alt="logos" />
-            <img src={A} alt="logos" />
+
+          <div className="flex justify-center mt-8 sm:mt-14 gap-8 sm:gap-48 flex-wrap">
+            <img src={crown} alt="logos" className=" sm:w-auto" />
+            <img src={ring} alt="logos" className=" sm:w-auto" />
+            <img src={digg} alt="logos" className=" sm:w-auto" />
+            <img src={fish} alt="logos" className=" sm:w-auto" />
+            <img src={round} alt="logos" className=" sm:w-auto" />
+            <img src={A} alt="logos" className=" sm:w-auto" />
           </div>
         </div>
       </div>
@@ -355,12 +374,14 @@ const HomePage = () => {
 
       <div className="cont">
         <div className="flex justify-center items-center">
-          <div className="flex flex-col text-white py-20 text-center">
+          <div className="flex flex-col text-white py-10 px-4 sm:py-20 sm:px-10 text-center">
             <div className="flex align-middle justify-center">
               <p className="bg-custom pb-3 text-center">Special Offer</p>
             </div>
-            <h3 className="text-5xl font-bold pb-3">Our Plans & Packages</h3>
-            <p className="mt-4 text-lg ">
+            <h3 className="text-4xl sm:text-5xl font-bold pb-3">
+              Our Plans & Packages
+            </h3>
+            <p className="mt-2 sm:mt-4 text-base sm:text-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation.
@@ -368,14 +389,18 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="text-white flex justify-center items-center w-full">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-7xl">
-            <div className="background-card p-12 rounded-lg shadow-lg text-white ">
-              <div className="text-4xl font-bold">
+        <div className="text-white flex justify-center items-center lg:w-full md:w-full sm:px-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-6 lg:w-full md:w-full max-w-7xl">
+            <div className="background-card p-8 sm:p-12 rounded-lg shadow-lg text-white">
+              <div className="text-3xl sm:text-4xl font-bold">
                 $1999 <span className="text-lg font-normal">/Year</span>
               </div>
-              <div className="text-2xl font-bold text-blue-400 mt-2">Meta</div>
-              <div className="text-lg mt-1">Facebook + Instagram</div>
+              <div className="text-xl sm:text-2xl font-bold text-blue-400 mt-2">
+                Meta
+              </div>
+              <div className="text-base sm:text-lg mt-1">
+                Facebook + Instagram
+              </div>
               <div className="mt-4">
                 <ul className="space-y-2">
                   <li className="flex items-center">
@@ -396,16 +421,21 @@ const HomePage = () => {
                   </li>
                 </ul>
               </div>
-              <button className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 mt-6 py-3 px-24 rounded-full text-white font-bold">
+              <button className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 lg:mt-6 lg:py-3 lg:px-20 sm:px-8 sm:py-2 sm:mt-2 md:px-6 md:py-2 mt-2 rounded-full text-white font-bold">
                 Choose Plan
               </button>
             </div>
-            <div className="background-card p-12 rounded-lg shadow-lg text-white ">
-              <div className="text-4xl font-bold">
+
+            <div className="background-card p-8 sm:p-12 rounded-lg shadow-lg text-white">
+              <div className="text-3xl sm:text-4xl font-bold">
                 $1999 <span className="text-lg font-normal">/Year</span>
               </div>
-              <div className="text-2xl font-bold text-blue-400 mt-2">Meta</div>
-              <div className="text-lg mt-1">Facebook + Instagram</div>
+              <div className="text-xl sm:text-2xl font-bold text-blue-400 mt-2">
+                Meta
+              </div>
+              <div className="text-base sm:text-lg mt-1">
+                Facebook + Instagram
+              </div>
               <div className="mt-4">
                 <ul className="space-y-2">
                   <li className="flex items-center">
@@ -426,16 +456,21 @@ const HomePage = () => {
                   </li>
                 </ul>
               </div>
-              <button className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 mt-6 py-3 px-24 rounded-full text-white font-bold">
+              <button className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 lg:mt-6 lg:py-3 lg:px-20 sm:px-8 sm:py-2 sm:mt-2 md:px-6 md:py-2 mt-2 rounded-full text-white font-bold">
                 Choose Plan
               </button>
             </div>
-            <div className="background-card p-12 rounded-lg shadow-lg text-white ">
-              <div className="text-4xl font-bold">
+
+            <div className="background-card p-8 sm:p-12 rounded-lg shadow-lg text-white">
+              <div className="text-3xl sm:text-4xl font-bold">
                 $1999 <span className="text-lg font-normal">/Year</span>
               </div>
-              <div className="text-2xl font-bold text-blue-400 mt-2">Meta</div>
-              <div className="text-lg mt-1">Facebook + Instagram</div>
+              <div className="text-xl sm:text-2xl font-bold text-blue-400 mt-2">
+                Meta
+              </div>
+              <div className="text-base sm:text-lg mt-1">
+                Facebook + Instagram
+              </div>
               <div className="mt-4">
                 <ul className="space-y-2">
                   <li className="flex items-center">
@@ -456,7 +491,7 @@ const HomePage = () => {
                   </li>
                 </ul>
               </div>
-              <button className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 mt-6 py-3 px-24 rounded-full text-white font-bold">
+              <button className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 lg:mt-6 lg:py-3 lg:px-20 sm:px-8 sm:py-2 sm:mt-2 md:px-6 md:py-2 mt-2 rounded-full text-white font-bold">
                 Choose Plan
               </button>
             </div>
@@ -480,7 +515,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className=" text-white p-8 flex justify-center items-center ">
+      <div className=" text-white p-8 flex justify-center items-center w-full ">
         <div className="cont">
           <form className="space-y-8 w-full max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

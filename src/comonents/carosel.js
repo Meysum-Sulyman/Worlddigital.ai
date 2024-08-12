@@ -14,13 +14,38 @@ export default function SimpleSlider() {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   return (
     <Slider {...settings}>
       <div className="Review-box flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 ">
-        <img className="w-14 h-14" src={InvertedComma} alt="Inverted Comma" />
-        <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin aliquet maurisa volutpat lobortis erat libero condimentum metuseu tincidunt.</p>
+        <img className="w-14 h-14 snap-center" src={InvertedComma} alt="Inverted Comma" />
+        <p className="text-lg text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin aliquet maurisa volutpat lobortis erat libero condimentum metuseu tincidunt.</p>
         <div className="Image-box flex flex-col items-center mt-4">
           <img className="w-16 h-16 rounded-full" src={Man1} alt="Reviewer" />
           <div className="flex ml-4">
@@ -32,7 +57,7 @@ export default function SimpleSlider() {
       </div>
       <div className="Review-box flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1  ">
         <img className="w-14 h-14" src={InvertedComma} alt="Inverted Comma" />
-        <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin aliquet maurisa volutpat lobortis erat libero condimentum metuseu tincidunt.</p>
+        <p className="text-lg text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin aliquet maurisa volutpat lobortis erat libero condimentum metuseu tincidunt.</p>
         <div className="Image-box flex flex-col items-center mt-4">
           <img className="w-16 h-16 rounded-full" src={Man2} alt="Reviewer" />
           <div className="flex ml-4">
@@ -44,7 +69,7 @@ export default function SimpleSlider() {
       </div>
       <div className="Review-box flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1  ">
         <img className="w-14 h-14" src={InvertedComma} alt="Inverted Comma" />
-        <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin aliquet maurisa volutpat lobortis erat libero condimentum metuseu tincidunt.</p>
+        <p className="text-lg text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin aliquet maurisa volutpat lobortis erat libero condimentum metuseu tincidunt.</p>
         <div className="Image-box flex flex-col items-center mt-4">
           <img className="w-16 h-16 rounded-full" src={Woman1} alt="Reviewer" />
           <div className="flex ml-4">
@@ -56,7 +81,7 @@ export default function SimpleSlider() {
       </div>
       <div className="Review-box flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1  ">
         <img className="w-14 h-14" src={InvertedComma} alt="Inverted Comma" />
-        <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin aliquet maurisa volutpat lobortis erat libero condimentum metuseu tincidunt.</p>
+        <p className="text-lg text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin aliquet maurisa volutpat lobortis erat libero condimentum metuseu tincidunt.</p>
         <div className="Image-box flex flex-col items-center mt-4">
           <img className="w-16 h-16 rounded-full" src={Woman2} alt="Reviewer" />
           <div className="flex ml-4">

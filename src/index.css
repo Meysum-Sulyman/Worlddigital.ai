@@ -186,6 +186,18 @@ body, html{
     flex-direction: column;
     gap: 20px;
   }
+
+  .bg-custom {
+    background: linear-gradient(281deg, #F32E0E 0%, #22A6F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    FONT-WEIGHT: 900;
+    font-size: 18px;
+    width: max-content;
+    margin: auto;
+}
 }
 
 @media only screen and (min-width: 600px) {
@@ -195,7 +207,8 @@ body, html{
 
   .cont.boxx {
     display: flex;
-    flex-direction: column;
     gap: 20px;
   }
+
+ 
 }

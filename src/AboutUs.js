@@ -4,7 +4,6 @@ import AboutRobot from "./assets/ABoutRobot.png";
 import dots from "./assets/﮸.png";
 import wallet from "./assets/Wallet.png";
 import screen from "./assets/Screen.png";
-import Howitworks from "./assets/HowItWOrks.png";
 import facebook from "./assets/2.png";
 import Google from "./assets/3.png";
 import Footer from "./comonents/footer";
@@ -14,6 +13,8 @@ import UserLock from "./assets/UserLock.png";
 import Fingerprint from "./assets/Fingerprint.png";
 import Wallet2 from "./assets/Wallet2.png";
 import downloadIicon from "./assets/Download Icon.png";
+import VideoPlayer from "./comonents/video";
+import thumbnailImage from "./assets/HowItWOrks.png";
 
 const AboutUs = () => {
   return (
@@ -35,11 +36,11 @@ const AboutUs = () => {
         {/* Our Story */}
         <div className="Our-Story-background">
           <div className="cont">
-            <div class="flex flex-col justify-center align-middle text-white py-20 text-center ">
+            <div class="flex flex-col justify-center align-middle text-white py-20 text-center px-10 md:px-4 sm:mx-4 ">
               <div class="flex align-middle justify-center">
                 <p class="bg-custom pb-3">Our Story</p>
               </div>
-              <h3 class="text-5xl font-bold pb-3">
+              <h3 class="lg:text-5xl md:text-5xl font-bold pb-3 sm:text-4xl">
                 Welcome to Worlddigital.ai
               </h3>
               <p class="mt-4 text-lg">
@@ -73,23 +74,25 @@ const AboutUs = () => {
 
         {/* About Company */}
         <div className="background-red text-white py-20">
-          <div className="cont">
-            <div class="flex flex-col text-white py-20 text-center ">
-              <div class=" ">
-                <p class="bg-custom pb-3">About Company</p>
+          <div className="cont px-5">
+            <div className="flex flex-col text-white py-20 px-5 text-center sm:flex-col sm:text-center">
+              <div className="">
+                <p className="bg-custom pb-3 ">
+                  About Company
+                </p>
               </div>
-              <div className="flex justify-between">
-                <h3 class="text-5xl font-bold pb-3">
+              <div className="flex flex-col sm:flex-row md:flex-row justify-between items-center">
+                <h3 className="text-5xl font-bold pb-3 text-center sm:text-left md:text-left">
                   Why Should Use Worlddigital.ai
                 </h3>
-                <button class="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 text-white font-bold py-2 px-12 rounded-full ">
+                <button className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 text-white font-bold py-2 px-12 rounded-full mt-4 sm:mt-0 md:mt-0">
                   Subscribe
                 </button>
               </div>
             </div>
 
-            <div className="flex gap-6 ">
-              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
+            <div className="flex flex-col sm:flex-row md:flex-row gap-6">
+              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl sm:px-5 md:px-5">
                 <div className="img-content">
                   <div className="flex gap-7">
                     <img
@@ -108,7 +111,8 @@ const AboutUs = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
+
+              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl sm:px-5 md:px-5">
                 <div className="img-content">
                   <div className="flex gap-7">
                     <img
@@ -127,7 +131,8 @@ const AboutUs = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
+
+              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl sm:px-5 md:px-5">
                 <div className="img-content">
                   <div className="flex gap-7">
                     <img
@@ -148,8 +153,8 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <div className="flex gap-6 mt-6">
-              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
+            <div className="flex flex-col sm:flex-row md:flex-row gap-6 mt-6 sm:px-5 md:px-5 lg:px-0">
+              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl sm:px-5 md:px-5">
                 <div className="img-content">
                   <div className="flex gap-7">
                     <img
@@ -168,7 +173,8 @@ const AboutUs = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
+
+              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl sm:px-5 md:px-5">
                 <div className="img-content">
                   <div className="flex gap-7">
                     <img
@@ -187,7 +193,8 @@ const AboutUs = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl ">
+
+              <div className="flex text-white p-8 border-blue-950 border-2 rounded-2xl sm:px-5 md:px-5">
                 <div className="img-content">
                   <div className="flex gap-7">
                     <img
@@ -214,45 +221,45 @@ const AboutUs = () => {
       {/* Why Choose Us */}
 
       <div className="">
-        <div className="flex">
-          <div className="flex">
-            <img src={AboutRobot} alt="ok" />
+        <div className="flex flex-col sm:flex-row">
+          <div className="flex justify-center sm:justify-start">
+            <img src={AboutRobot} alt="ok" className="w-full sm:w-auto" />
           </div>
-          <div class="flex flex-col text-white w-1/3 py-20 pl-24">
-            <div class=" ">
-              <p class="bg-custom pb-3">About Company</p>
+          <div className="flex flex-col text-white sm:w-1/3 py-10 sm:py-20 px-6 sm:pl-24 md:w-1/3 md:pl-32">
+            <div className="text-center sm:pl-6">
+              <p className="bg-custom pb-3">Why Choose Us</p>
             </div>
             <div className="flex flex-col justify-between">
-              <h3 class="text-5xl font-bold pb-3">
+              <h3 className="text-3xl sm:text-5xl font-bold pb-3 text-center sm:text-left">
                 Why Should Use Worlddigital.ai
               </h3>
-              <p>
+              <p className="text-center sm:text-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud xercitation ullamco laboris
                 nisi ut aliquip ex ea commodo tempor incididunt ut labore et
                 dolore magna.
               </p>
-              <div className="">
+              <div className="mt-5">
                 <div className="flex justify-between my-5">
                   <p>Lorem Ispum</p>
                   <p>90%</p>
                 </div>
-                <div className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 text-white font-bold py-1 px-12 rounded-full "></div>
+                <div className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 text-white font-bold py-1 rounded-full"></div>
               </div>
-              <div className="">
+              <div className="mt-5">
                 <div className="flex justify-between my-5">
                   <p>Lorem Ispum</p>
                   <p>90%</p>
                 </div>
-                <div className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 text-white font-bold py-1 px-12 rounded-full "></div>
+                <div className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 text-white font-bold py-1 rounded-full"></div>
               </div>
-              <div className="">
+              <div className="mt-5">
                 <div className="flex justify-between my-5">
                   <p>Lorem Ispum</p>
                   <p>90%</p>
                 </div>
-                <div className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 text-white font-bold py-1 px-12 rounded-full "></div>
+                <div className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 text-white font-bold py-1 rounded-full"></div>
               </div>
             </div>
           </div>
@@ -263,18 +270,19 @@ const AboutUs = () => {
       <div className="">
         <div className="">
           <div className="cont">
-            <div class="flex flex-col justify-center align-middle text-white py-20 text-center ">
-              <div class="flex align-middle justify-center">
-                <p class="bg-custom pb-3">How We Works</p>
+            <div className="flex flex-col justify-center align-middle text-white py-20 text-center">
+              <div className="flex align-middle justify-center">
+                <p className="bg-custom pb-3 ">How We Work</p>
               </div>
-              <h3 class="text-5xl font-bold pb-3">Our Working Process</h3>
-              <p class="mt-4 text-lg">
+              <h3 className="text-5xl font-bold pb-3">Our Working Process</h3>
+              <p className="mt-4 text-lg md:px-4 sm:mx-4 text-center sm:text-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation.
               </p>
             </div>
-            <div className="flex gap-3 mb-10 pl-7">
+
+            <div className="flex flex-col sm:flex-row gap-3 mb-10 lg:pl-7 sm:pr-3 ">
               <div className="max-w-sm p-6 bg-navy rounded-lg shadow-lg">
                 <div className="bg-gradient-to-r from-blue-950 to-black p-6 rounded-t-lg shadow-md">
                   <div className="flex items-center space-x-3">
@@ -294,6 +302,7 @@ const AboutUs = () => {
                   </p>
                 </div>
               </div>
+
               <div className="max-w-sm p-6 bg-navy rounded-lg shadow-lg">
                 <div className="bg-gradient-to-r from-blue-950 to-black p-6 rounded-t-lg shadow-md">
                   <div className="flex items-center space-x-3">
@@ -313,6 +322,7 @@ const AboutUs = () => {
                   </p>
                 </div>
               </div>
+
               <div className="max-w-sm p-6 bg-navy rounded-lg shadow-lg">
                 <div className="bg-gradient-to-r from-blue-950 to-black p-6 rounded-t-lg shadow-md">
                   <div className="flex items-center space-x-3">
@@ -336,10 +346,14 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+
       <div className="p-10">
-        <div className="cont">
-          <div className="flex align-middle justify-center">
-            <img src={Howitworks} alt="Howitworks"></img>
+        <div className="cont relative">
+          <div className="flex align-middle justify-center relative yt-video">
+            <VideoPlayer
+              videoId="vNntv2O4QK8?si=lYEQqPHJ4MW7UWT1" // YouTube video ID
+              thumbnailSrc={thumbnailImage} // Path to your thumbnail image
+            />
           </div>
         </div>
       </div>
@@ -347,25 +361,28 @@ const AboutUs = () => {
       {/* Case Studies */}
       <div className="mb-10">
         <div className="cont">
-          <div class="flex flex-col justify-center align-middle text-white py-20 text-center ">
-            <div class="flex align-middle justify-center">
-              <p class="bg-custom pb-3">Case Studies</p>
+          <div className="flex flex-col justify-center align-middle text-white py-20 px-5 text-center">
+            <div className="flex align-middle justify-center">
+              <p className="bg-custom pb-3">Case Studies</p>
             </div>
-            <h3 class="text-5xl font-bold pb-3">
-              Our Case Studies Comming Soon!
+            <h3 className="text-5xl font-bold pb-3">
+              Our Case Studies Coming Soon!
             </h3>
-            <p class="mt-4 text-lg">
+            <p className="mt-4 text-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation.
             </p>
           </div>
-          <div className="flex">
-            <img src={facebook} alt="ok" />
-            <img src={Google} alt="ok" />
+          
+          <div className="xl:flex xl:flex-row lg:flex lg:flex-row md:flex md:flex-row md:justify-center sm:flex sm:flex-col sm:px-4">
+            <img src={facebook} alt="Facebook" className="mb-4 sm:mb-0" />
+            <img src={Google} alt="Google" className="mb-4 sm:mb-0" />
           </div>
+          
         </div>
       </div>
+
       <Footer />
     </div>
   );

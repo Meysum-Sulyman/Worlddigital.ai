@@ -132,7 +132,7 @@ const AboutUs = () => {
 
       {/* Right Image */}
       <div className="lg:w-1/2 flex justify-center lg:justify-end mt-12 lg:mt-0">
-        <img src={Circle} alt="AI Capabilities" className="w-full lg:w-auto max-w-lg sm:w-60" />
+        <img src={Circle} alt="AI Capabilities" className="lg:w-full md:w-full max-w-lg sm:w-60" />
       </div>
     </div>
     </div>

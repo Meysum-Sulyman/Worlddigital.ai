@@ -4,7 +4,7 @@ import AboutRobot from "./assets/ABoutRobot.png";
 import dots from "./assets/﮸.png";
 import wallet from "./assets/Wallet.png";
 import screen from "./assets/Screen.png";
-import facebook from "./assets/2.png";
+import facebook from "./assets/Google.png";
 import Google from "./assets/3.png";
 import Footer from "./comonents/footer";
 import Symbol1 from "./assets/Symbol 1.png";

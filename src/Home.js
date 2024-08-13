@@ -169,8 +169,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap gap-5 p-2 mr-12 ml-12 md:flex-col sm:flex-col ">
+      <div className="flex">
         <div className="cont boxx">
+          <div className="gap-5 flex-wrap p-2 mr-12 ml-12 lg:flex lg:flex-row md:flex-col sm:flex-col ">
           <div className="flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 min-w-[200px]">
             <img className="w-14 h-14" src={Hand} alt="Hand Icon" />
             <h3 className="text-2xl font-bold pb-3">AI-Powered Chatbots</h3>
@@ -215,6 +216,7 @@ const HomePage = () => {
               </p>
             </div>
           </div>
+          </div>
         </div>
       </div>
       <div className="text-white text-center p-8">
@@ -229,12 +231,12 @@ const HomePage = () => {
 
       <div className="about-background p-6 sm:p-10">
         <div className="cont">
-          <div className="text-white flex flex-col sm:flex-row justify-center items-center w-full">
-            <div className="flex flex-col w-full sm:w-2/4">
+          <div className="text-white flex flex-col lg:flex-row md:flex-col sm:flex-col justify-center items-center w-full">
+            <div className="flex flex-col w-full">
               <div className="shadow-lg rounded-lg overflow-hidden flex flex-col lg:flex-row md:flex-col mb-8">
                 <div className="flex md:justify-start">
                   <div className="">
-                    <img src={Robot} alt="Robot" className="w-80" />
+                    <img src={Robot} alt="Robot" className="w-auto min-w-80" />
                   </div>
                 </div>
                 <div className="flex flex-col text-white p-6 sm:p-8 border-red-600 border-2 rounded-lg flex-1 bg-gradient-to-r from-red-600 via-red-500 to-blue-600">
@@ -284,8 +286,8 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="text-white mt-8 sm:mt-0 sm:pl-10 w-full sm:w-2/4">
-              <h2 className="bg-custom text-lg sm:text-xl">About Us</h2>
+            <div className="text-white mt-8 lg:pl-20 w-full ">
+              <h2 className="bg-custom text-lg sm:text-xl sm:text-left">About Us</h2>
               <h1 className="text-3xl sm:text-4xl font-bold text-red-500">
                 worlddigital.ai
               </h1>
@@ -421,7 +423,7 @@ const HomePage = () => {
                   </li>
                 </ul>
               </div>
-              <button className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 lg:mt-6 lg:py-3 lg:px-20 sm:px-8 sm:py-2 sm:mt-2 md:px-6 md:py-2 mt-2 rounded-full text-white font-bold">
+              <button className="bg-gradient-to-r from-red-600 via-red-500 to-blue-600 lg:mt-6 lg:py-3 lg:px-20 sm:px-8 sm:py-2 sm:mt-2 sm:p-2 md:px-6 md:py-2 mt-2 rounded-full text-white font-bold">
                 Choose Plan
               </button>
             </div>
@@ -514,9 +516,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
+      <div className="cont">
       <div className=" text-white p-8 flex justify-center items-center w-full ">
-        <div className="cont">
+        
           <form className="space-y-8 w-full max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>

@@ -20,7 +20,7 @@ const Footer = () => {
 
         <div className="flex justify-center items-center pt-8 pb-16 px-4">
           <input
-            className="bg-transparent border-b border-red-800 py-2 px-6 lg:px-40 focus:outline-none mr-4 border-2 rounded-full w-full max-w-xs lg:max-w-md"
+            className="bg-transparent border-b border-red-800 py-2 px-6 focus:outline-none mr-4 border-2 rounded-full w-full max-w-xs lg:max-w-md"
             type="email"
             placeholder="Your Email"
           />

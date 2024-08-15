@@ -49,8 +49,9 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap gap-5 p-2 mr-12 ml-12 md:flex-col sm:flex-col ">
+      <div className="flex">
         <div className="cont boxx">
+        <div className="gap-5 flex flex-wrap p-2 mr-12 ml-12 lg:flex lg:flex-row md:flex-col sm:flex-col">
           <div className="flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 min-w-[200px]">
             <img className="w-14 h-14" src={Hand} alt="Hand Icon" />
             <h3 className="text-2xl font-bold pb-3">AI-Powered Chatbots</h3>
@@ -59,7 +60,6 @@ const AboutUs = () => {
               provide.
             </p>
           </div>
-
           <div className="flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 min-w-[200px]">
             <div className="img-content">
               <img className="w-14 h-14" src={Snowflake} alt="Snowflake Icon" />
@@ -94,6 +94,7 @@ const AboutUs = () => {
                 profiles.
               </p>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -132,7 +133,7 @@ const AboutUs = () => {
 
       {/* Right Image */}
       <div className="lg:w-1/2 flex justify-center lg:justify-end mt-12 lg:mt-0">
-        <img src={Circle} alt="AI Capabilities" className="lg:w-full md:w-full max-w-lg sm:w-60" />
+        <img src={Circle} alt="AI Capabilities" className="lg:w-full md:w-full sm:w-[22rem]" />
       </div>
     </div>
     </div>

@@ -171,7 +171,7 @@ const HomePage = () => {
       </div>
       <div className="flex">
         <div className="cont boxx">
-          <div className="gap-5 flex-wrap p-2 mr-12 ml-12 lg:flex lg:flex-row md:flex-col sm:flex-col ">
+          <div className="gap-5 flex flex-wrap p-2 mr-12 ml-12 lg:flex lg:flex-row md:flex-col sm:flex-col">
           <div className="flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 min-w-[200px]">
             <img className="w-14 h-14" src={Hand} alt="Hand Icon" />
             <h3 className="text-2xl font-bold pb-3">AI-Powered Chatbots</h3>
@@ -180,7 +180,6 @@ const HomePage = () => {
               provide.
             </p>
           </div>
-
           <div className="flex flex-col text-white p-8 border-red-600 border-2 rounded-lg flex-1 min-w-[200px]">
             <div className="img-content">
               <img className="w-14 h-14" src={Snowflake} alt="Snowflake Icon" />
@@ -233,10 +232,10 @@ const HomePage = () => {
         <div className="cont">
           <div className="text-white flex flex-col lg:flex-row md:flex-col sm:flex-col justify-center items-center w-full">
             <div className="flex flex-col w-full">
-              <div className="shadow-lg rounded-lg overflow-hidden flex flex-col lg:flex-row md:flex-col mb-8">
+              <div className="shadow-lg rounded-lg overflow-hidden flex flex-col lg:flex-row md:flex-row mb-8">
                 <div className="flex md:justify-start">
                   <div className="">
-                    <img src={Robot} alt="Robot" className="w-auto min-w-80" />
+                    <img src={Robot} alt="Robot" className="w-full min-w-[22rem]" />
                   </div>
                 </div>
                 <div className="flex flex-col text-white p-6 sm:p-8 border-red-600 border-2 rounded-lg flex-1 bg-gradient-to-r from-red-600 via-red-500 to-blue-600">
@@ -391,8 +390,8 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="text-white flex justify-center items-center lg:w-full md:w-full sm:px-5">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-6 lg:w-full md:w-full max-w-7xl">
+        <div className="text-white flex justify-center items-center lg:w-full sm:px-5">
+          <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-6 sm:gap-6 lg:w-full max-w-7xl md:w-96">
             <div className="background-card p-8 sm:p-12 rounded-lg shadow-lg text-white">
               <div className="text-3xl sm:text-4xl font-bold">
                 $1999 <span className="text-lg font-normal">/Year</span>
@@ -433,10 +432,10 @@ const HomePage = () => {
                 $1999 <span className="text-lg font-normal">/Year</span>
               </div>
               <div className="text-xl sm:text-2xl font-bold text-blue-400 mt-2">
-                Meta
+                Google
               </div>
               <div className="text-base sm:text-lg mt-1">
-                Facebook + Instagram
+                Google Ads
               </div>
               <div className="mt-4">
                 <ul className="space-y-2">
@@ -465,13 +464,13 @@ const HomePage = () => {
 
             <div className="background-card p-8 sm:p-12 rounded-lg shadow-lg text-white">
               <div className="text-3xl sm:text-4xl font-bold">
-                $1999 <span className="text-lg font-normal">/Year</span>
+                $3249 <span className="text-lg font-normal">/Year</span>
               </div>
               <div className="text-xl sm:text-2xl font-bold text-blue-400 mt-2">
-                Meta
+                Google + Meta
               </div>
               <div className="text-base sm:text-lg mt-1">
-                Facebook + Instagram
+                Google + Facebook + Instagram
               </div>
               <div className="mt-4">
                 <ul className="space-y-2">

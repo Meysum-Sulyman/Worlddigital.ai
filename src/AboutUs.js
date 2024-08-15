@@ -101,7 +101,7 @@ const AboutUs = () => {
                       alt="Snowflake Icon"
                     />
                     <div className="flex flex-col">
-                      <h3 className="text-2xl font-bold pb-3">
+                      <h3 className="lg:text-2xl md:text-xl font-bold pb-3">
                         Automated Visual Designs
                       </h3>
                       <p className="text-lg">
@@ -121,7 +121,7 @@ const AboutUs = () => {
                       alt="Snowflake Icon"
                     />
                     <div className="flex flex-col">
-                      <h3 className="text-2xl font-bold pb-3">
+                      <h3 className="lg:text-2xl md:text-xl font-bold pb-3">
                         Automated Visual Designs
                       </h3>
                       <p className="text-lg">
@@ -141,7 +141,7 @@ const AboutUs = () => {
                       alt="Snowflake Icon"
                     />
                     <div className="flex flex-col">
-                      <h3 className="text-2xl font-bold pb-3">
+                      <h3 className="lg:text-2xl md:text-xl font-bold pb-3">
                         Automated Visual Designs
                       </h3>
                       <p className="text-lg">
@@ -163,7 +163,7 @@ const AboutUs = () => {
                       alt="Snowflake Icon"
                     />
                     <div className="flex flex-col">
-                      <h3 className="text-2xl font-bold pb-3">
+                      <h3 className="lg:text-2xl md:text-xl font-bold pb-3">
                         Automated Visual Designs
                       </h3>
                       <p className="text-lg">
@@ -183,7 +183,7 @@ const AboutUs = () => {
                       alt="Snowflake Icon"
                     />
                     <div className="flex flex-col">
-                      <h3 className="text-2xl font-bold pb-3">
+                      <h3 className="lg:text-2xl md:text-xl font-bold pb-3">
                         Automated Visual Designs
                       </h3>
                       <p className="text-lg">
@@ -203,7 +203,7 @@ const AboutUs = () => {
                       alt="Snowflake Icon"
                     />
                     <div className="flex flex-col">
-                      <h3 className="text-2xl font-bold pb-3">
+                      <h3 className="lg:text-2xl md:text-xl font-bold pb-3">
                         Automated Visual Designs
                       </h3>
                       <p className="text-lg">
@@ -221,11 +221,11 @@ const AboutUs = () => {
       {/* Why Choose Us */}
 
       <div className="">
-        <div className="flex flex-col sm:flex-row">
+        <div className="flex flex-col md:flex-row sm:flex-col">
           <div className="flex justify-center sm:justify-start">
             <img src={AboutRobot} alt="ok" className="w-full sm:w-auto" />
           </div>
-          <div className="flex flex-col text-white sm:w-1/3 py-10 sm:py-20 px-6 sm:pl-24 md:w-1/3 md:pl-32">
+          <div className="flex flex-col text-white sm:w-1/3 py-10 sm:py-20 px-6 md:w-1/2 lg:p-40">
             <div className="text-center sm:pl-6">
               <p className="bg-custom pb-3">Why Choose Us</p>
             </div>
@@ -375,7 +375,7 @@ const AboutUs = () => {
             </p>
           </div>
           
-          <div className="xl:flex xl:flex-row lg:flex lg:flex-row md:flex md:flex-row md:justify-center sm:flex sm:flex-col sm:px-4">
+          <div className="xl:flex xl:flex-row lg:flex lg:flex-row md:flex md:flex-col md:justify-center sm:flex sm:flex-col sm:px-4">
             <img src={facebook} alt="Facebook" className="mb-4 sm:mb-0" />
             <img src={Google} alt="Google" className="mb-4 sm:mb-0" />
           </div>

@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
 
         {/* Links */}
-        <div className={`md:flex space-x-6 text-white hidden `}>
+        <div className={`md:flex space-x-6 text-white hidden md:block`}>
           <Link to="/" className="hover:text-red-300">
             Home
           </Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
           <Link to="/services" className="text-white hover:text-red-300">
             Services
           </Link>
-          <Link to="/" className="text-white hover:text-red-300">
+          <Link to="/carrer" className="text-white hover:text-red-300">
             Career
           </Link>
           <Link to="/" className="text-white hover:text-red-300">
